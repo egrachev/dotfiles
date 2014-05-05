@@ -1,0 +1,19 @@
+{
+	"color_scheme": "Packages/zenburn/zenburn.tmTheme",
+    "draw_minimap_border": true,
+    "font_face": "Monospace",
+    "highlight_line": true,
+	"font_size":  13,
+	"translate_tabs_to_spaces": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+    "rulers":
+    [
+        80
+    ],
+    "scroll_speed": 2.0,
+    "word_wrap": false
+
+}
