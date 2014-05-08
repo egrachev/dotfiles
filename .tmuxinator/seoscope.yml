@@ -7,12 +7,12 @@ windows:
   - logs:
       layout: even-vertical
       panes:
-        - runserver: /home/eugene/projects/seoscope/bin/python ./manage.py runserver
-        - celery: /home/eugene/projects/seoscope/bin/python  ./manage.py celery worker -c 3 -E -l INFO -n all -Q fast_operations,default,restore,yandex,etxt,statistics
-        - websockets: /home/eugene/projects/seoscope/bin/python ./manage.py runwebsockets
+        - runserver: source /home/eugene/projects/seoscope/bin/activate && python manage.py runserver
+        - celery: source /home/eugene/projects/seoscope/bin/activate && python manage.py celery worker -c 3 -E -l INFO -n all -Q fast_operations,default,restore,yandex,etxt,statistics
+        - websockets: source /home/eugene/projects/seoscope/bin/activate && python manage.py runwebsockets
   - shells:
       layout: even-vertical
       panes:
-        - shell_plus: /home/eugene/projects/seoscope/bin/python  ./manage.py shell_plus
-        - dbshell: /home/eugene/projects/seoscope/bin/python ./manage.py dbshell
+        - shell_plus: source /home/eugene/projects/seoscope/bin/activate && python manage.py shell_plus
+        - dbshell: source /home/eugene/projects/seoscope/bin/activate && python manage.py dbshell
 
