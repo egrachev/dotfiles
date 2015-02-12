@@ -1,5 +1,5 @@
 ZSH=$HOME/.oh-my-zsh
-plugins=(git autojump command-not-found git-flow git-flow-avh celery django fabric pip vagrant docker autoenv  tmux tmuxinator)
+plugins=(git autojump command-not-found git-flow git-flow-avh celery django fabric pip vagrant docker tmux tmuxinator)
 source $ZSH/oh-my-zsh.sh
 
 export PATH=$HOME/bin:/usr/local/bin:/usr/bin:$PATH
